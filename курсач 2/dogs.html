@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши собаки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Кинологический клуб</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="dogs.html">Наши собаки</a></li>
+                <li><a href="training.html">Тренировки</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dogs">
+            <h2>Наши собаки</h2>
+            <div class="dog-container">
+                <!-- Здесь будет добавлен код для вывода карточек собак -->
+            </div>
+            <button id="addDogButton">Добавить собаку</button>
+        </section>
+
+        <div id="addDogModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Добавить собаку</h2>
+                <form id="addDogForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="breed">Порода:</label>
+                    <input type="text" id="breed" name="breed" required><br><br>
+
+                    <label for="image">Изображение:</label>
+                    <input type="text" id="image" name="image" placeholder="URL изображения" required><br><br>
+
+                    <input type="submit" value="Добавить">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Кинологический клуб</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
